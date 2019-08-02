@@ -1,0 +1,39 @@
+.quote {
+  background-color: #ebf5f8;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Indie Flower";
+}
+
+.content {
+  text-align: center;
+  width: 575px;
+  max-width: 95%;
+  margin: auto;
+}
+
+#quote-box {
+  background: #f8faf1;
+}
+
+.buttons-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#text {
+  font-size: 2em;
+}
+
+.link-fix,
+.link-fix:hover,
+.link-fix:link,
+.link-fix:visited,
+.link-fix:active {
+  color: white;
+  text-decoration: none;
+}
