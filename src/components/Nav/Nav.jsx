@@ -25,7 +25,7 @@ const Nav = props => (
                       href={
                         project.projectURL
                           ? project.projectURL
-                          : "react-" + project.title
+                          : "#/react-" + project.title
                       }
                     >
                       {project.title}
@@ -34,7 +34,7 @@ const Nav = props => (
                   <Dropdown.Divider />
                   <Dropdown.Item
                     className="dropdown-item"
-                    href={"/" + item.label}
+                    href={"/#/" + item.label}
                   >
                     {item.label}
                   </Dropdown.Item>
