@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/aminsennour.com-2.0/static/css/main.b41f7ef3.chunk.css",
-    "main.js": "/aminsennour.com-2.0/static/js/main.172e069f.chunk.js",
-    "main.js.map": "/aminsennour.com-2.0/static/js/main.172e069f.chunk.js.map",
-    "runtime~main.js": "/aminsennour.com-2.0/static/js/runtime~main.44295f5c.js",
-    "runtime~main.js.map": "/aminsennour.com-2.0/static/js/runtime~main.44295f5c.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "/aminsennour.com-2.0/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.56c1a799.chunk.js": "/aminsennour.com-2.0/static/js/2.56c1a799.chunk.js",
-    "static/js/2.56c1a799.chunk.js.map": "/aminsennour.com-2.0/static/js/2.56c1a799.chunk.js.map",
-    "index.html": "/aminsennour.com-2.0/index.html",
-    "precache-manifest.321c18b74034215e2575921b267ae064.js": "/aminsennour.com-2.0/precache-manifest.321c18b74034215e2575921b267ae064.js",
-    "service-worker.js": "/aminsennour.com-2.0/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "/aminsennour.com-2.0/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.b41f7ef3.chunk.css.map": "/aminsennour.com-2.0/static/css/main.b41f7ef3.chunk.css.map"
+    "main.css": "/static/css/main.b41f7ef3.chunk.css",
+    "main.js": "/static/js/main.172e069f.chunk.js",
+    "main.js.map": "/static/js/main.172e069f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.56c1a799.chunk.js": "/static/js/2.56c1a799.chunk.js",
+    "static/js/2.56c1a799.chunk.js.map": "/static/js/2.56c1a799.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ed76a432eb08b97cb1512b3e820f144e.js": "/precache-manifest.ed76a432eb08b97cb1512b3e820f144e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.b41f7ef3.chunk.css.map": "/static/css/main.b41f7ef3.chunk.css.map"
   }
 }
