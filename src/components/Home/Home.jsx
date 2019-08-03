@@ -5,7 +5,7 @@ const Home = props => (
   <div className="">
     <div className="row m-0 p-0 align-items-center">
       <div className="col-md m-2">
-        <div className="card p-2">
+        <div className="card shadow-sm p-2">
           {" "}
           <h1>Hi, I'm Amin Sennour.</h1>
           <p>{"{developer}"}</p>
@@ -13,7 +13,7 @@ const Home = props => (
         </div>
       </div>
       <div className="col-md m-2">
-        <div className="card p-2">
+        <div className="card shadow-sm p-2">
           {" "}
           <h1>University of Arizona</h1>
           <p>
@@ -35,7 +35,7 @@ const Home = props => (
       </div>
     </div>
     <div className="">
-      <div className="card m-4">
+      <div className="card shadow-sm m-4">
         <ul className="list-group list-group-flush">
           {props.projectsList.map(item => (
             <li key={item.label} className="list-group-item">
