@@ -1,25 +1,29 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
+import "./Nav.css";
 
 const Nav = props => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a className="navbar-brand" href="/">
-        Amin Sennour
-      </a>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          {props.projects.map(item => (
-            <div key={item.label}>
-              <Dropdown className="mr-2">
-                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+    <div className="pos-f-t">
+      <div className="collapse" id="navbarToggleExternalContent">
+        <div className="bg-dark p-4">
+          <ul className="navbar-nav mr-auto">
+            {props.projects.map(item => (
+              <li key={item.label} className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   {item.label}
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   {item.projects.map(project => (
-                    <Dropdown.Item
+                    <a
                       key={project.title}
                       className="dropdown-item"
                       href={
@@ -29,22 +33,35 @@ const Nav = props => (
                       }
                     >
                       {project.title}
-                    </Dropdown.Item>
+                    </a>
                   ))}
-                  <Dropdown.Divider />
-                  <Dropdown.Item
-                    className="dropdown-item"
-                    href={"/#/" + item.label}
-                  >
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item" href={"/#/" + item.label}>
                     {item.label}
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-          ))}
-        </ul>
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </nav>
+      <nav className="navbar navbar-dark bg-dark">
+        <a className="navbar-brand" href="/">
+          Amin Sennour
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
   </div>
 );
 

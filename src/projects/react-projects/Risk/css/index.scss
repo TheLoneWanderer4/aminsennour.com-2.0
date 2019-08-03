@@ -11,7 +11,7 @@ $break-point: 1200px;
 
 .risk {
   background-color: $background;
-  height: calc(100vh - 60px);
+  height: calc(100vh);
 }
 
 @each $key in h1, h2, h3, h4, h5, h6 {
