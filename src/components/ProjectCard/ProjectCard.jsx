@@ -33,7 +33,7 @@ function ProjectCard(props) {
               href={
                 props.project.projectURL
                   ? props.project.projectURL
-                  : "react-" + props.project.title
+                  : "#/react-" + props.project.title
               }
             >
               Found here

@@ -34,7 +34,7 @@ const Home = props => (
       <ul className="list-group list-group-flush">
         {props.projectsList.map(item => (
           <li key={item.label}>
-            <a className="list-group-item" href={"/" + item.label}>
+            <a className="list-group-item" href={"/#/" + item.label}>
               {item.label}
             </a>
           </li>
