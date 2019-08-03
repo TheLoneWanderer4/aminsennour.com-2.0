@@ -8,8 +8,6 @@ import createHashHistory from "history/createHashHistory";
 
 const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
-console.log(hashHistory);
-
 ReactDOM.render(
   <Router history={hashHistory}>
     <App />

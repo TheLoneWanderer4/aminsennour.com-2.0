@@ -21,7 +21,7 @@ class App extends Component {
                 key={item.title}
                 // the react- is there so the page can exclude the normal page rendering, like the nav bar,
                 // for the react projects
-                path={"/react-" + item.title}
+                path={"/#/react-" + item.title}
                 exact
                 component={item.component}
               />
@@ -38,7 +38,7 @@ class App extends Component {
         {projectsList.map(item => (
           <Route
             key={item.label}
-            path={"/" + item.label}
+            path={"/#/" + item.label}
             exact
             component={() => <ProjectPage projectsJSON={item} />}
           />
