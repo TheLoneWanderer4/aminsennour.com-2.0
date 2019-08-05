@@ -14,12 +14,6 @@ $break-point: 1200px;
   height: calc(100vh);
 }
 
-@each $key in h1, h2, h3, h4, h5, h6 {
-  #{$key} {
-    margin: 0;
-  }
-}
-
 .wrapper {
   display: flex;
   @include break {

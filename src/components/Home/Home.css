@@ -1,0 +1,13 @@
+.homeGrid {
+  min-height: calc(100vh - 65px);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+
+  font-family: "Kodchasan", cursive;
+}
+@media (max-width: 900px) {
+  .homeGrid {
+    display: contents;
+  }
+}

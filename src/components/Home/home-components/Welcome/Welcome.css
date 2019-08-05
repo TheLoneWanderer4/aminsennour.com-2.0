@@ -1,0 +1,10 @@
+.intro-section {
+  text-align: center;
+  font-size: 3em;
+}
+.intro-section p {
+  color: #33cccc;
+  font-size: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage/ProjectPage.jsx";
 import Home from "./components/Home/Home.jsx";
 import Nav from "./components/Nav/Nav.jsx";
@@ -8,6 +8,13 @@ import projectsList from "./projects/index.js";
 
 class App extends Component {
   // this is a paper fix, it's bad, but it works.
+  RenderNav = withRouter(props => {
+    if (props.location.pathname.match(/react-/)) {
+      return <div />;
+    } else {
+      return <Nav />;
+    }
+  });
 
   ReactRoutes(projectsList) {
     // This meta function generates the routes used by the project pages for any react projct
@@ -50,7 +57,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav projects={projectsList} />
+        <this.RenderNav />
         {this.ReactRoutes(projectsList)}
         {this.ProjectRoutes(projectsList)}
         <Route

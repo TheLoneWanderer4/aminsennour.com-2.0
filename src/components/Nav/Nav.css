@@ -1,4 +1,8 @@
-.dropdown-menu {
-  position: relative;
-  z-index: 10000;
+.navbar {
+  height: 65px;
+  width: 100%;
+}
+
+.navWrap {
+  height: 65px;
 }
