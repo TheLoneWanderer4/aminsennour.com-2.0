@@ -3,6 +3,11 @@
   font-size: 3em;
   height: calc(100vh - 65px);
 }
+
+.intro-card-wrapper {
+  height: calc(70vh - 65px);
+}
+
 .intro-section p {
   color: #33cccc;
   font-size: 0.5em;

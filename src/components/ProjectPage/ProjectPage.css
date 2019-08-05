@@ -4,5 +4,9 @@
 }
 
 .project-card-wrapper {
+  height: calc(70vh - 65px);
+}
+
+.project-wrapper {
   height: calc(100vh - 65px);
 }
