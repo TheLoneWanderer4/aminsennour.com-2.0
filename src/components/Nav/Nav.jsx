@@ -1,5 +1,4 @@
 import React from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import "./Nav.css";
 
 const Nav = props => (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Education.css";
 
-const Education = ({}) => (
+const Education = () => (
   <div className="p-4 home-card">
     <div className="card bg-light">
       <div className="card-body">
