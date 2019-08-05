@@ -2,7 +2,7 @@ import React from "react";
 import "./Education.css";
 
 const Education = ({}) => (
-  <div className="p-4">
+  <div className="p-4 home-card">
     <div className="card bg-light">
       <div className="card-body">
         <h1 className="card-title">Education</h1>

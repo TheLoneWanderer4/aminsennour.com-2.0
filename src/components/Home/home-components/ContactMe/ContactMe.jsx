@@ -4,7 +4,7 @@ import "./ContactMe.css";
 const content = "d-flex align-items-center justify-content-center flex-column";
 
 const ContactMe = props => (
-  <div class="contactme p-4">
+  <div class="contactme home-card p-4">
     <div class="card bg-light">
       <div class="card-body">
         <h3 class="card-title">Contact Me</h3>

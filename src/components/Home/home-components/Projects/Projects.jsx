@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 const Projects = props => (
-  <div class="projects p-4 d-flex justify-content-center">
+  <div class="projects home-card p-4">
     <div className="card bg-light">
       <div className="card-body">
         <h4 className="card-title">Look at the things I've made</h4>

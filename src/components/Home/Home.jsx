@@ -7,15 +7,11 @@ import Projects from "./home-components/Projects/Projects.jsx";
 import ContactMe from "./home-components/ContactMe/ContactMe.jsx";
 
 const Home = props => (
-  <div className="bg-secondary">
-    <div className="homeGrid">
-      <div>
-        <Welcome />
-        <Education />
-      </div>
-      <ContactMe />
-    </div>
+  <div className="home">
+    <Welcome />
+    <Education />
     <Projects projectsList={props.projectsList} />
+    <ContactMe />
   </div>
 );
 
