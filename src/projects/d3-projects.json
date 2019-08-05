@@ -1,5 +1,6 @@
 {
   "label": "D3 Projects",
+  "desc": "D3 is a library",
   "projects": [
     {
       "title": "Bar Chart",

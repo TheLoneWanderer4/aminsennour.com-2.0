@@ -1,5 +1,6 @@
 {
   "label": "HTML Projects",
+  "desc": "D3 is a library",
   "projects": [
     {
       "title": "Landing Page",

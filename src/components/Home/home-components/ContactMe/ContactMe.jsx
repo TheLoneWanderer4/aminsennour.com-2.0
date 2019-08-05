@@ -1,5 +1,8 @@
 import React from "react";
 import "./ContactMe.css";
+import contacts from "./contacts.json";
+
+console.log(contacts);
 
 const ContactMe = props => (
   <div className="contactme home-card p-4">
@@ -8,9 +11,11 @@ const ContactMe = props => (
         <h3 className="card-title">Contact Me</h3>
       </div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">Cras justo odio</li>
-        <li className="list-group-item">Dapibus ac facilisis in</li>
-        <li className="list-group-item">Vestibulum at eros</li>
+        {contacts.map(contact => (
+          <a className="list-group-item" href={contact.url}>
+            {contact.label}{" "}
+          </a>
+        ))}
       </ul>
     </div>
   </div>

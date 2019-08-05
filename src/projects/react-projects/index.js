@@ -8,6 +8,7 @@ import Risk from "./Risk/Risk.js";
 export default {
   isReact: true,
   label: "React Projects",
+  desc: "D3 is a library",
   projects: [
     {
       title: "Markdown",
