@@ -4,6 +4,8 @@ import ProjectPage from "./components/ProjectPage/ProjectPage.jsx";
 import Home from "./components/Home/Home.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 
+import Fade from "react-reveal/Fade"; // Importing Fade effect
+
 import projectsList from "./projects/index.js";
 
 class App extends Component {
@@ -47,7 +49,11 @@ class App extends Component {
             key={item.label}
             path={"/" + item.label}
             exact
-            component={() => <ProjectPage projectsJSON={item} />}
+            component={() => (
+              <Fade>
+                <ProjectPage projectsJSON={item} />{" "}
+              </Fade>
+            )}
           />
         ))}
       </div>
@@ -63,7 +69,11 @@ class App extends Component {
         <Route
           path="/"
           exact
-          component={() => <Home projectsList={projectsList} />}
+          component={() => (
+            <Fade>
+              <Home projectsList={projectsList} />
+            </Fade>
+          )}
         />
       </div>
     );

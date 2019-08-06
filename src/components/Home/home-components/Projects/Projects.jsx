@@ -3,9 +3,11 @@ import "./Projects.css";
 
 const Projects = props => (
   <div className="projects home-card p-4">
-    <div className="card bg-light">
+    <div className="card shadow-lg">
+      <div className="card-body border-bottom bg-light">
+        <h4 className="card-title m-0">Look at the things I've made</h4>
+      </div>
       <div className="card-body">
-        <h4 className="card-title">Look at the things I've made</h4>
         <div className="d-flex flex-row justify-content-center">
           {props.projectsList.map(item => (
             <a

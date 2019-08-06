@@ -3,14 +3,22 @@ import "./Education.css";
 
 const Education = () => (
   <div className="p-4 home-card text-center">
-    <div className="card bg-light p-2">
-      <h1 className="card-title">Education</h1>
-      <h5 className="card-title">University of Arizona</h5>
-      <ul className="list-group list-group-flush">
-        <b> College of Science : </b>
-        <li className="list-group-item">Computer Science</li>
-        <li className="list-group-item">Mathematics</li>
-      </ul>
+    <div className="card shadow-lg">
+      <div className="card-body border-bottom bg-light">
+        <h2 className="card-title m-0">Education</h2>
+      </div>
+      <div className="card-body">
+        <div className="d-flex flex-column align-items-center text-left">
+          <div>
+            <li class="current">
+              University of Arizona, Computer Science <span>(2018-2022)</span>
+            </li>
+            <li class="current">
+              University of Arizona, Math <span>(2018-2022)</span>
+            </li>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );

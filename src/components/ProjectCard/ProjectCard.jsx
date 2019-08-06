@@ -4,7 +4,7 @@ import "./ProjectCard.css";
 function ProjectCard(props) {
   return (
     <div className="p-4">
-      <div className="card project-card shadow-sm">
+      <div className="card project-card shadow-lg">
         <div className="card-body text-dark bg-light border-bottom">
           <h3 className="card-title">{props.project.title}</h3>
         </div>
