@@ -9,7 +9,7 @@ class ContactMe extends React.Component {
 
   componentDidMount() {
     fetch(
-      "https://raw.githubusercontent.com/TheLoneWanderer4/aminsennour.com-2.0/master/src/components/Home/home-components/ContactMe/contacts.json"
+      "https://raw.githubusercontent.com/TheLoneWanderer4/aminsennour.com-2.0/master/data/contacts.json"
     )
       .then(response => response.json())
       .then(contacts => {
