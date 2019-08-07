@@ -4,7 +4,7 @@
   "projects": [
     {
       "title": "Landing Page",
-      "imageURL": "https://plot.ly/~RPlotBot/3512/count-vs-animals.png",
+      "imageURL": "https://d1vhcvzji58n1j.cloudfront.net/assets/pop/os-logo-b44ed4fc34_2560.png",
       "listItems": [
         "This projct is a simple graph of the United States GDP over time",
         "Built using d3 to iterate over the data",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Technical Documentation Page",
-      "imageURL": "http://www.sthda.com/sthda/RDoc/figure/graphs/scatter-plots-base-scatter-plot-1.png",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBulvM394ID7Ehhn6Rv7mrwYclxI3JXV6SluLEhVldRTlfNsN",
       "listItems": [
         "This projct is a plot of Doping VS performance in profesional cycling"
       ],

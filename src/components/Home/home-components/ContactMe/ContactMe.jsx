@@ -25,13 +25,15 @@ class ContactMe extends React.Component {
             <h3 className="card-title m-0">Contact Me</h3>
           </div>
           <div className="card-body d-flex flex-column align-items-center">
-            <div>
+            <div className="list-group w-100 text-center">
               {this.state.contacts.map(contact => (
-                <li className="btn" key={contact.label}>
-                  <a className="btn btn-primary" href={contact.url}>
-                    {contact.label}{" "}
-                  </a>
-                </li>
+                <a
+                  key={contact.label}
+                  className="list-group-item list-group-item-action"
+                  href={contact.url}
+                >
+                  {contact.label}{" "}
+                </a>
               ))}
             </div>
           </div>

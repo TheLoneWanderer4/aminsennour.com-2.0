@@ -10,7 +10,7 @@ function ProjectCard(props) {
         </div>
         <div className="row no-gutters">
           <div className="col-md-4 m-auto">
-            <div className="project-img-wrapper border-bottom">
+            <div className="project-img-wrapper border-bottom h-100 p-4">
               <img
                 className="card-img-top"
                 src={props.project.imageURL}
