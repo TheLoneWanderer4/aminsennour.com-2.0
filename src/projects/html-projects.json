@@ -1,42 +1,45 @@
 {
   "label": "HTML Projects",
-  "desc": "D3 is a library",
+  "desc": "Here is the result of my FCC responsive web-design certification. Over the course of these 3 projects I learned a great deal about the basics of web design, and got comfortable with CSS and HTML, the building blocks of the web.",
   "projects": [
     {
-      "title": "Landing Page",
-      "imageURL": "https://d1vhcvzji58n1j.cloudfront.net/assets/pop/os-logo-b44ed4fc34_2560.png",
-      "listItems": [
-        "This projct is a simple graph of the United States GDP over time",
-        "Built using d3 to iterate over the data",
-        "Used the d3 scale methods to draw the axis and scale the GDP values to usable rect heights"
-      ],
-      "projectURL": "/HTML_Projects/landing.html"
-    },
-    {
-      "title": "Technical Documentation Page",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBulvM394ID7Ehhn6Rv7mrwYclxI3JXV6SluLEhVldRTlfNsN",
-      "listItems": [
-        "This projct is a plot of Doping VS performance in profesional cycling"
-      ],
-      "projectURL": "/HTML_Projects/tech.html"
-    },
-    {
       "title": "Tribute Page",
-      "imageURL": "https://www.iia.nl/SiteFiles/Nieuws/Sample-Heat-Map.jpg",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg",
       "listItems": [
-        "Here is a heatmap of average global tempratures from the 1700s to today.",
-        "It's organized both by month and year, with color representing temprature variance"
+        "My first ever HTML/CSS project. A tribute page dedicated to the city of Almaty, the cultural capital of Kazakhstan.",
+        "I did a lot with this project, expirmented with flexbox amoung other things, but mostly I was still working to get even a basic feel for web design and HTML"
       ],
       "projectURL": "/HTML_Projects/tribute.html"
     },
     {
       "title": "Voting Form",
-      "imageURL": "http://my.ilstu.edu/~jrcarter/Geo204/Choro/map-AmFact-5nat-breaks-green-80pct.jpg",
+      "imageURL": "https://sedsucsd.org/assets/images/about/seds-usa-logo.png",
       "listItems": [
-        "Here is a heatmap of average global tempratures from the 1700s to today.",
-        "It's organized both by month and year, with color representing temprature variance"
+        "Here is a basic voting form for the SEDS general election",
+        "With this project I wanted to explore CSS Grid, and the HTML form elemnts",
+        "This is just a dummy form, it doesn't feed information anywhere"
       ],
       "projectURL": "/HTML_Projects/voting.html"
+    },
+    {
+      "title": "Landing Page",
+      "imageURL": "https://d1vhcvzji58n1j.cloudfront.net/assets/pop/os-logo-b44ed4fc34_2560.png",
+      "listItems": [
+        "A basic product landing page, for Pop!Os, my Linux distro of choice",
+        "Features include a Navbar and footer, which were difficult challenges when I was fist learning HTML/CSS",
+        "I also used this project to experiment with a card layout, as well as colors!"
+      ],
+      "projectURL": "/HTML_Projects/landing.html"
+    },
+    {
+      "title": "Technical Documentation Page",
+      "imageURL": "https://www.crossorigin.io/wp-content/uploads/2019/05/logo.png",
+      "listItems": [
+        "Here is a guide to linked-lists, a basic ADT, in python.",
+        "With this project I wanted to expirment with diffrent layout options, see the Static sidebar, and the use of shaodws to add a layered effect to the main body",
+        "I also worked to refine my use of color, using complemntary light greys rather than some of the more brash colors of previous projects"
+      ],
+      "projectURL": "/HTML_Projects/tech.html"
     }
   ]
 }

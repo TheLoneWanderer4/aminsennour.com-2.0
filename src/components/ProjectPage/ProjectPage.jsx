@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectPage.css";
 import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 
-import Effect from "react-reveal/Slide";
+import Effect from "react-reveal/Fade";
 
 class ProjectPage extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class ProjectPage extends React.Component {
 
   render() {
     return (
-      <Effect top cascade className="m-0">
+      <Effect duration={30} className="m-0">
         <div>
           <div className="p-4">
             <div className="d-flex flex-column justify-content-center">
