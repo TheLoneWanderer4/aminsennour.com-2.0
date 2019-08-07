@@ -9,14 +9,13 @@ function ProjectCard(props) {
           <h3 className="card-title">{props.project.title}</h3>
         </div>
         <div className="row no-gutters">
-          <div className="col-md-4 m-auto">
-            <div className="project-img-wrapper border-bottom h-100 p-4">
-              <img
-                className="card-img-top"
-                src={props.project.imageURL}
-                alt={props.project.imageURL}
-              />
-            </div>
+          <div className="col-md-4 m-auto project-img-wrapper border-bottom">
+            <img
+              id="project-img"
+              className="card-img-top"
+              src={props.project.imageURL}
+              alt={props.project.imageURL}
+            />
           </div>
           <div className="col-md-8 border-left">
             <ul className="list-group list-group-flush">

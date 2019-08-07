@@ -9,3 +9,17 @@
   align-items: center;
   height: 100%;
 }
+
+#project-img {
+  padding: 25px;
+}
+
+@media (max-width: 900px) {
+  .project-img-wrapper {
+    border: 0;
+  }
+  #project-img {
+    height: 0;
+    padding: 0px;
+  }
+}
