@@ -2,6 +2,9 @@
   { "label": "Telegram", "url": "https://t.me/nafal45" },
   { "label": "Email", "url": "mailto:aminsennour@gmail.com" },
   { "label": "Github", "url": "https://github.com/TheLoneWanderer4" },
-  { "label": "Linkedin", "url": "https://www.linkedin.com/in/aminsennour/" },
+  {
+    "label": "Linkedin",
+    "url": "https://www.linkedin.com/in/amin-sennour-010a22167/"
+  },
   { "label": "FCC", "url": "https://www.freecodecamp.org/nafal" }
 ]
