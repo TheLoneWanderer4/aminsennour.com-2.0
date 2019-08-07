@@ -7,7 +7,7 @@ class ContactMe extends React.Component {
     this.state = { contacts: [] };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     fetch(
       "https://raw.githubusercontent.com/TheLoneWanderer4/aminsennour.com-2.0/master/data/contacts.json"
     )
@@ -27,8 +27,8 @@ class ContactMe extends React.Component {
           <div className="card-body d-flex flex-column align-items-center">
             <div>
               {this.state.contacts.map(contact => (
-                <li>
-                  <a className="" href={contact.url}>
+                <li className="btn" key={contact.label}>
+                  <a className="btn btn-primary" href={contact.url}>
                     {contact.label}{" "}
                   </a>
                 </li>

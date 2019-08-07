@@ -10,10 +10,10 @@ const Education = () => (
       <div className="card-body">
         <div className="d-flex flex-column align-items-center text-left">
           <div>
-            <li class="current">
+            <li className="current">
               University of Arizona, Computer Science <span>(2018-2022)</span>
             </li>
-            <li class="current">
+            <li className="current">
               University of Arizona, Math <span>(2018-2022)</span>
             </li>
           </div>

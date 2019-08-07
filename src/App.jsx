@@ -9,6 +9,11 @@ import Fade from "react-reveal/Fade"; // Importing Fade effect
 import projectsList from "./projects/index.js";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { projectsList };
+  }
+
   // this is a paper fix, it's bad, but it works.
   RenderNav = withRouter(props => {
     if (props.location.pathname.match(/react-/)) {
@@ -22,7 +27,7 @@ class App extends Component {
     // This meta function generates the routes used by the project pages for any react projct
     return (
       <div>
-        {projectsList
+        {this.state.projectsList
           .filter(item => item.isReact)
           .map(item =>
             item.projects.map(item => (
@@ -44,7 +49,7 @@ class App extends Component {
     // This generates the routes for all the project pages, based off the imported JSON objects
     return (
       <div>
-        {projectsList.map(item => (
+        {this.state.projectsList.map(item => (
           <Route
             key={item.label}
             path={"/" + item.label}
@@ -64,14 +69,14 @@ class App extends Component {
     return (
       <div className="bg-secondary">
         <this.RenderNav />
-        {this.ReactRoutes(projectsList)}
-        {this.ProjectRoutes(projectsList)}
+        {this.ReactRoutes(this.state.projectsList)}
+        {this.ProjectRoutes(this.state.projectsList)}
         <Route
           path="/"
           exact
           component={() => (
             <Fade>
-              <Home projectsList={projectsList} />
+              <Home projectsList={this.state.projectsList} />
             </Fade>
           )}
         />
