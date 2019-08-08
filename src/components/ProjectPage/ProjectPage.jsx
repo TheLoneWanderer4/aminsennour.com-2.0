@@ -26,9 +26,7 @@ class ProjectPage extends React.Component {
             </div>
           </div>
           {this.props.projectsJSON.projects.map(project => (
-            <div key={project.label}>
-              <ProjectCard project={project} />
-            </div>
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </Effect>

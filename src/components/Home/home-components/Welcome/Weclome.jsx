@@ -9,9 +9,13 @@ const Welcome = () => (
           <h1 className="card-title m-0">Hi, I'm Amin Sennour.</h1>
         </div>
         <div className="card-body m-0 p-0 d-flex flex-column justify-content-center align-items-center">
-          <span className="badge badge-primary p-2 m-4 text-md">
+          <a
+            href="https://github.com/TheLoneWanderer4"
+            target="_blank"
+            className="badge badge-primary p-2 m-4 "
+          >
             Software Developer
-          </span>
+          </a>
         </div>
       </div>
     </div>
