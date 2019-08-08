@@ -4,12 +4,21 @@ import "./ProjectCard.css";
 function ProjectCard(props) {
   return (
     <div className="p-4">
-      <div className="card project-card shadow-lg">
+      <a
+        className="card project-card shadow-lg p-0 bord text-decoration-none text-dark"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={
+          props.project.projectURL
+            ? props.project.projectURL
+            : "#/react-" + props.project.title
+        }
+      >
         <div className="card-body text-dark bg-light border-bottom">
-          <h3 className="card-title">{props.project.title}</h3>
+          <h3 className="card-title m-0">{props.project.title}</h3>
         </div>
-        <div className="row no-gutters">
-          <div className="col-md-4 m-auto project-img-wrapper border-bottom">
+        <div className="row no-gutters bg">
+          <div className="col-md-4 m-auto project-img-wrapper">
             <img
               id="project-img"
               className="card-img-top"
@@ -17,7 +26,7 @@ function ProjectCard(props) {
               alt={props.project.imageURL}
             />
           </div>
-          <div className="col-md-8 border-left">
+          <div className="col-md-8 border-left d-flex align-items-center">
             <ul className="list-group list-group-flush">
               {props.project.listItems.map(item => (
                 <li key={item} className="list-group-item">
@@ -25,23 +34,9 @@ function ProjectCard(props) {
                 </li>
               ))}
             </ul>
-            <div className="card-body">
-              <a
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={
-                  props.project.projectURL
-                    ? props.project.projectURL
-                    : "#/react-" + props.project.title
-                }
-              >
-                Found here
-              </a>
-            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

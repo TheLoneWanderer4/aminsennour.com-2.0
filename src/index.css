@@ -4,3 +4,11 @@ body {
 #root {
   margin: 0;
 }
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  border: none;
+}

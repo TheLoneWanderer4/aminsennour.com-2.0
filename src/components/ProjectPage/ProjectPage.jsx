@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectPage.css";
 import ProjectCard from "../ProjectCard/ProjectCard.jsx";
+import ProjectPageTopCard from "../ProjectPageTopCard/ProjectPageTopCard.jsx";
 
 import Effect from "react-reveal/Fade";
 
@@ -12,19 +13,11 @@ class ProjectPage extends React.Component {
   render() {
     return (
       <Effect duration={30} className="m-0">
+        <ProjectPageTopCard
+          title={this.props.projectsJSON.label}
+          desc={this.props.projectsJSON.desc}
+        />
         <div>
-          <div className="p-4">
-            <div className="d-flex flex-column justify-content-center">
-              <div className="card project-card shadow-sm">
-                <div className="card-body text-dark bg-light border-bottom">
-                  <h3 className="card-title">
-                    {this.props.projectsJSON.label}
-                  </h3>
-                </div>
-                <div className="card-body">{this.props.projectsJSON.desc}</div>
-              </div>
-            </div>
-          </div>
           {this.props.projectsJSON.projects.map(project => (
             <ProjectCard key={project.title} project={project} />
           ))}

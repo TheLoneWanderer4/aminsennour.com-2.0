@@ -1,6 +1,10 @@
 .risk {
-  background-color: #f9fbff;
-  height: calc(100vh); }
+  background-color: #ebf5f8;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .wrapper {
   display: flex; }

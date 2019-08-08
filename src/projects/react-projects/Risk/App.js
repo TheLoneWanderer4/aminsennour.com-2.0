@@ -117,7 +117,7 @@ class App extends Component {
       remaining = this.state.Defense;
     }
     return (
-      <div className="content card p-2 mt-2">
+      <div className="content card p-2 mt-2 shadow-sm">
         <WinCard className="" winner={winner} remaining={remaining} />
       </div>
     );
@@ -126,7 +126,7 @@ class App extends Component {
   renderInfo() {
     if (!this.state.canChange) {
       return (
-        <div className="card content p-2 mt-2">
+        <div className="card content p-2 mt-2 shadow-sm">
           <InfoCard
             className=""
             attack={this.state.AttackRoll}
@@ -143,7 +143,7 @@ class App extends Component {
       <div className="risk">
         <div className="wrapper">
           <div className="container">
-            <div className="card content p-2 mt-2">
+            <div className="card content p-2 mt-2 shadow-sm">
               <Title className="card-title" value="Risk Calc" />
 
               <form className="list-group" onSubmit={this.handleSubmit}>
@@ -192,7 +192,7 @@ class App extends Component {
             {this.renderWin()}
           </div>
           <div className="container">
-            <div className="card content p-2 mt-2">
+            <div className="card content p-2 mt-2 shadow-sm">
               <History history={this.state.history} />
             </div>
           </div>
