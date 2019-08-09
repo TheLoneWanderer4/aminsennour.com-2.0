@@ -3,7 +3,6 @@ import { Route, withRouter } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage/ProjectPage.jsx";
 import Home from "./components/Home/Home.jsx";
 import Nav from "./components/Nav/Nav.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 
 import Fade from "react-reveal/Fade"; // Importing Fade effect
 
@@ -21,14 +20,6 @@ class App extends Component {
       return <div />;
     } else {
       return <Nav />;
-    }
-  });
-
-  RenderFooter = withRouter(props => {
-    if (props.location.pathname.match(/react-/)) {
-      return <div />;
-    } else {
-      return <Footer />;
     }
   });
 
@@ -89,7 +80,6 @@ class App extends Component {
             </Fade>
           )}
         />
-        <this.RenderFooter />
       </div>
     );
   }
