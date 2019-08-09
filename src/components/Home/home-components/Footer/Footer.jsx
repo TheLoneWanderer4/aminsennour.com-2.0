@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="p-4 home-card text-center">
       <div className="card shadow-lg">
         <div className="card-body bg-light">
-          Made in Dallax TX and Tucson AZ
+          Made in Dallas TX, and Tucson AZ
         </div>
       </div>
     </div>
