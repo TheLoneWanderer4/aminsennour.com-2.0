@@ -17,24 +17,24 @@ const startState = {
 const Counter = ({ id, onIncrement, onDecrement, label, value }) => (
   <div className="clock">
     <div>
-      <div className="card m-2 align-items-center  ">
-        <div id={id + "-label"} className="m-2 p-2">
+      <div className="">
+        <div id={id + "-label"} className="  p-2">
           {label}
         </div>
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row align-items-center justify-content-center">
           <button
             id={id + "-increment"}
-            className="btn btn-success m-2 p-2"
+            className="badge badge-success"
             onClick={onIncrement}
           >
             INC
           </button>
-          <div id={id + "-length"} className="m-2 p-2">
+          <div id={id + "-length"} className="  p-2">
             {value}
           </div>
           <button
             id={id + "-decrement"}
-            className="btn btn-info m-2 p-2"
+            className="badge badge-info"
             onClick={onDecrement}
           >
             DEC
@@ -158,7 +158,7 @@ class TimerApp extends React.Component {
     return (
       <div className="clockWrapper">
         <div className="bg-light shadow p-4 card">
-          <div className="card p-2 m-2 align-items-center">Clock</div>
+          <div className="p-2 text-center">Clock</div>
           <div className="counters">
             <Counter
               id="break"
@@ -175,7 +175,7 @@ class TimerApp extends React.Component {
               value={this.state.session}
             />
           </div>
-          <div className="card m-2 p-2 align-items-center">
+          <div className="p-2 text-center">
             <audio
               id="beep"
               preload="auto"

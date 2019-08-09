@@ -164,7 +164,7 @@ class DrumPad extends React.Component {
       <div
         id={this.props.clipId}
         onClick={this.playSound}
-        className={"drum-pad text-white " + this.state.padStyle}
+        className={this.state.padStyle + " " + "drum-pad badge badge-primary"}
       >
         <audio
           className="clip"
@@ -217,13 +217,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="drum">
-        <div id="drum-machine" className="container card flex-row shadow p-2">
-          <DrumBank
-            bank={this.state.bank}
-            power={this.state.power}
-            updateScreenText={this.updateScreenText}
-          />
-          <Display screenText={this.state.screenText} />
+        <div id="drum-machine" className="card shadow p-2">
+          <div>
+            <DrumBank
+              bank={this.state.bank}
+              power={this.state.power}
+              updateScreenText={this.updateScreenText}
+            />
+          </div>
+          <div>
+            <Display screenText={this.state.screenText} />
+          </div>
         </div>
       </div>
     );
