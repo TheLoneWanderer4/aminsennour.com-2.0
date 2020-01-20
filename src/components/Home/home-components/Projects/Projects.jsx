@@ -19,6 +19,15 @@ const Projects = props => (
             </a>
           ))}
         </div>
+        <div>
+          <a
+            key="Carboniferous"
+            className="btn btn-primary m-2 shadow-sm "
+            href="https://github.com/TheLoneWanderer4/Carboniferous"
+          >
+            Carboniferous
+          </a>
+        </div>
       </div>
     </div>
   </div>
