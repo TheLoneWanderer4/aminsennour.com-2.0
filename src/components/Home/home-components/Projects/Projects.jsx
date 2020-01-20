@@ -9,6 +9,13 @@ const Projects = props => (
       </div>
       <div className="card-body">
         <div className="d-flex flex-row justify-content-center">
+          <a
+            key="Carboniferous"
+            className="btn btn-primary m-2 shadow-sm"
+            href="https://github.com/TheLoneWanderer4/Carboniferous"
+          >
+            Carboniferous
+          </a>
           {props.projectsList.map(item => (
             <a
               key={item.label}
@@ -18,15 +25,6 @@ const Projects = props => (
               {item.label}
             </a>
           ))}
-        </div>
-        <div>
-          <a
-            key="Carboniferous"
-            className="btn btn-primary m-2 shadow-sm text-center"
-            href="https://github.com/TheLoneWanderer4/Carboniferous"
-          >
-            Carboniferous
-          </a>
         </div>
       </div>
     </div>
